@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+
+service Test {
+	rpc Test(Request) returns (Result) {
+	}
+}
+
+message Request {
+	string query = 1;
+}
+
+message Result {
+
+	string title = 1;
+	string url = 2;
+	string snippet = 3;
+}
